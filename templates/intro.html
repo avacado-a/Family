@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome{% endblock %}
+{% block css %}
+<link href={{ url_for('static', filename='css/intro.css') }} rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block content %}
+
+<img src="{{ url_for('static', filename='assets/imagekeep/img') }}" alt="{{img}}">
+<a href={{ url_for('home') }}><button>Click here to use TeachMe</button></a>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome{% endblock %}
+{% block css %}
+<link href={{ url_for('static', filename='css/intro.css') }} rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block content %}
+<h1>Our Family</h1>
+
+<a href={{ url_for('hourlyimg') }}><button>Click here to see the image of the hour</button></a>
+{{images}}
+{% endblock %}
